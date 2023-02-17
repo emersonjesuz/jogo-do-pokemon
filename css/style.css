@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(170, 218, 170);
+  font-family: sans-serif;
+}
+.conteiner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 30px;
+  background-image: url(../assets/scene.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 95% 95%;
+  
+
+}
+.caixa-placar{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 20%;
+  height: 95%;
+  padding-bottom: 50px;
+}
+.placar{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 250px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgba(8, 8, 8, 0.404);
+}
+.box-estrela{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  height: 50px;
+
+}
+.estrela{
+  width: 30px;
+}
+.estrela img{
+  width: 100%;
+}
+.placar h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.301);
+}
+h3{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.596);
+}
+.limite{
+  position: relative;
+  right: 40px;
+  width: 63.5%;
+  height: 90%;
+}
+.boneco{
+  position:absolute;
+  width:100px;
+  top: 0px;
+  right: 0px;
+  z-index: 5;
+}
+.boss1,.boss2{
+  position: absolute;
+  width: 140px;
+  right: 50%;
+  top:50%;
+  z-index: 6;
+}
+.premio{
+  position: absolute;
+  width: 100px;
+  
+  right: 80%;
+  top: 80%;
+  z-index: 1;
+}
+.tela-escura{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  z-index: 6;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.808);
+}
+.tela-escura h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 100px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: 'Rubik Mono One', sans-serif;
+  background-color: rgba(240, 248, 255, 0.11);
+  color: red;
+}
